@@ -1,0 +1,3 @@
+class people::chai::application{
+
+}
