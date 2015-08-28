@@ -26,12 +26,12 @@ class people::chai {
 
 
 
-  android::build_tools { '22':
-  }
-  
-  android::version{ '22':
-    options => ['add_on', 'system_image', 'sample']
-    }
+  #android::build_tools { '22':
+  #}
+
+  #android::version{ '22':
+  #  options => ['add_on', 'system_image', 'sample']
+  #  }
 
 
 }

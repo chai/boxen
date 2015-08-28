@@ -2,7 +2,7 @@ require boxen::environment
 require homebrew
 require gcc
 require stdlib
-require java
+#require java
 
 Exec {
   group       => 'staff',
