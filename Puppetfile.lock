@@ -1,9 +1,4 @@
 GITHUBTARBALL
-  remote: boxen/puppet-android
-  specs:
-    android (1.5.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.11.0)
@@ -119,7 +114,6 @@ GITHUBTARBALL
     module_data (0.0.4)
 
 DEPENDENCIES
-  android (= 1.5.1)
   boxen (= 3.11.0)
   brewcask (= 0.0.6)
   dnsmasq (= 2.0.1)
