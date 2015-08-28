@@ -61,11 +61,6 @@ node default {
   include dropbox
   include java
 
-  include android::sdk
-  include android::ndk
-  include android::tools
-  include android::platform_tools
-  include android::studio
 
 
   # fail if FDE is not enabled
@@ -102,12 +97,6 @@ node default {
 
 
 
-
-android::version{ '22':
-    options => ['add_on', 'system_image', 'sample']
-    }
-
-android::build_tools{'22':}
 
 
 

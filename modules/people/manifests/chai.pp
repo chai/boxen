@@ -1,4 +1,11 @@
 include people::chai::applications
+include android::sdk
+include android::ndk
+include android::tools
+include android::platform_tools
+include android::studio
+
+
 class people::chai {
 
   notify { 'class people::chai declared': }
@@ -24,7 +31,13 @@ class people::chai {
 
 
 
+  android::version{ '22':
+      options => ['add_on', 'system_image', 'sample']
+      }
 
-  
+  android::build_tools{'22':}
+
+
+
 
 }
