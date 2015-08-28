@@ -1,9 +1,14 @@
 include people::chai::applications
+include people::chai::osx
+
+include dropbox
+include java
 include android::sdk
 include android::ndk
 include android::tools
 include android::platform_tools
 include android::studio
+
 
 
 class people::chai {
@@ -35,8 +40,8 @@ class people::chai {
       options => ['add_on', 'system_image', 'sample']
       }
 
-  android::build_tools{'22':}
-
+  android::build_tools{ '22':
+  }
 
 
 
