@@ -1,13 +1,11 @@
-# Add stlib for android
-# Add java for android
+#Add stlib for android
+#Add java for android
 
-#require stdlib
 #require java
 
 
 include people::chai::applications
-include dropbox
-include googledrive
+
 
 #include android::sdk
 #include android::ndk

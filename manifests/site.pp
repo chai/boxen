@@ -2,6 +2,9 @@ require boxen::environment
 require homebrew
 require gcc
 
+
+
+
 Exec {
   group       => 'staff',
   logoutput   => on_failure,
@@ -57,6 +60,8 @@ node default {
   include git
   include hub
   include nginx
+  include dropbox
+  include googledrive
 
 
   # fail if FDE is not enabled
