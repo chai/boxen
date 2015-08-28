@@ -3,8 +3,6 @@ require homebrew
 require gcc
 
 
-
-
 Exec {
   group       => 'staff',
   logoutput   => on_failure,
@@ -61,7 +59,13 @@ node default {
   include hub
   include nginx
   include dropbox
-  include googledrive
+  include java
+
+  include android::sdk
+  include android::ndk
+  include android::tools
+  include android::platform_tools
+  include android::studio
 
 
   # fail if FDE is not enabled
@@ -95,6 +99,15 @@ node default {
     target => $boxen::config::repodir
   }
 
+
+
+
+
+android::version{ '22':
+    options => ['add_on', 'system_image', 'sample']
+    }
+
+android::build_tools{'22':}
 
 
 

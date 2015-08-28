@@ -1,20 +1,4 @@
-#Add stlib for android
-#Add java for android
-
-#require java
-
-
 include people::chai::applications
-
-
-#include android::sdk
-#include android::ndk
-#include android::tools
-#include android::platform_tools
-#include android::build_tools
-#include android::studio
-
-
 class people::chai {
 
   notify { 'class people::chai declared': }
@@ -41,12 +25,6 @@ class people::chai {
 
 
 
-  android::build_tools { '22':
-  }
-
-  android::version{ '22':
-    options => ['add_on', 'system_image', 'sample']
-    }
-
+  
 
 }
