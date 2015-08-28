@@ -64,6 +64,8 @@ node default {
   include android::ndk
   include android::tools
   include android::platform_tools
+  include android::build_tools
+  include android::studio
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
