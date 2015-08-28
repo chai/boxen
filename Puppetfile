@@ -67,5 +67,6 @@ github "xquartz",     "1.2.1"
 # github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
 
-github "dropbox", "1.4.1"
-github "android", "1.5.1"
+github "dropbox",     "1.4.1"
+github "googledrive", "1.0.2"
+github "android",     "1.5.1"

@@ -1,8 +1,6 @@
 require boxen::environment
 require homebrew
 require gcc
-require stdlib
-#require java
 
 Exec {
   group       => 'staff',
@@ -59,13 +57,7 @@ node default {
   include git
   include hub
   include nginx
-  include dropbox
-  include android::sdk
-  include android::ndk
-  include android::tools
-  include android::platform_tools
-  include android::build_tools
-  include android::studio
+
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {

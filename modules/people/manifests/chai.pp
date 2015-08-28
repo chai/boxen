@@ -1,4 +1,22 @@
+# Add stlib for android
+# Add java for android
+
+require stdlib
+require java
+
+
 include people::chai::applications
+include dropbox
+include googledrive
+
+include android::sdk
+include android::ndk
+include android::tools
+include android::platform_tools
+include android::build_tools
+include android::studio
+
+
 class people::chai {
 
   notify { 'class people::chai declared': }
