@@ -60,6 +60,10 @@ node default {
   include hub
   include nginx
   include dropbox
+  include android::sdk
+  include android::ndk
+  include android::tools
+  include android::platform_tools
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -91,4 +95,9 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+
+
+
+
 }

@@ -22,4 +22,16 @@ class people::chai {
     target  => "${::boxen_srcdir}/puppet/ext/envpuppet",
     require => Repository["${::boxen_srcdir}/puppet"],
   }
+
+
+
+
+  android::build_tools { '22':
+  }
+  
+  android::version{ '22':
+    options => ['add_on', 'system_image', 'sample']
+    }
+
+
 }
