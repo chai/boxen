@@ -94,6 +94,9 @@ node default {
 include zsh
 include skydrive
 include textmate::textmate2::release
+include osxfuse
+include ntfs_3g
+
 
 include mysql
 #include postgresql
