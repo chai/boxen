@@ -87,4 +87,4 @@ github "zsh",             "1.0.0"
 github "skydrive",        "1.0.1"
 github "textmate",        "1.1.0"
 github "puppet-osxfuse"   "1.4.0"
-github "puppet-ntfs_3g"   "1.0.0
+github "puppet-ntfs_3g"   "1.0.0"
